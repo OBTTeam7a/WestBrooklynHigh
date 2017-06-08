@@ -7,7 +7,6 @@ body{
 	margin: 0;
 }
 
-
 .container {
 	width: 90%;
 	margin-left: auto;
@@ -341,7 +340,6 @@ body{
 	background-color: #314996;
 }
 
-
 .col-12 img{
 	width: 100%;
 	height: 500px;
@@ -354,8 +352,6 @@ body{
 	height: inherit;
 	object-fit: cover;
 }
-
-
 
 .title {
 	width: 100%;

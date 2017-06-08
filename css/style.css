@@ -6,15 +6,32 @@
 header{
     text-align: center;
     align-content: center;
+    display: flex;
+}
+/* Logo code*/
+#fullLogo{
+    width: 50%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
 }
 #logo{
-    width: 45%;
-}
-#logo img{
+    width: 20%;
+    height: 20%;
     display: inline-block;
 }
+#logo img{
+    width: 100%;
+    height: 100%;
+}
 #logoTextContainer{
-    width: 62%
+    width: 75%
+}
+#logoTextContainer h1{
+    font-size: 2rem;
+}
+#logoTextContainer h3{
+    font-size: 1.45rem;
 }
 #logoText1{
     border-bottom: 2px solid black;
@@ -23,27 +40,207 @@ header{
 #logoText2{
     
 }
+/*drop down menu code*/
+.menu{
+    display: inline-block;
+    cursor: pointer;
+}
+.bar1, .bar2, .bar3{
+    width: 35px;
+    height: 5px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+/* Rotate first bar */
+.change .bar1{
+    -webkit-transform: rotate(-45deg) translate(-9px,6px);
+    transform: rotate(-45deg) translate(-9px,6px);
+}
+/* Fade out the second bar */
+.change .bar2{
+    opacity:0;
+}
+/* Rotate last bar */
+.change .bar3{
+    -webkit-transform: rotate(45deg) translate(-8px,-8px);
+    transform: rotate(45deg) translate(-8px,-8px);
+}
+.top_right_header{
+	width: 50%;
+    display: inline-flex;
+}
+.menuBtn{
+    
+}
+.lang_select{
+	width: 130px;
+	height: 20px;
+	background-color: white;
+	position: relative;
+	float: right;
+	margin-top: 0;
+	margin-right: 25px;
+	padding: 0;
+	display: flex;
+}
+.sub_menu_value{
+	text-align: center;
+	background-color: white;
+	margin-left: 1px;
+	padding: 1px;
+}
+.sub_menu_value span{
+	width: inherit;
+	height: inherit;
+	margin: 0;
+	padding: 0;
+}
+.sub_menu_value a {
+	text-decoration: none;
+	margin: 0;
+	color: #000;
+}
+.arrow {
+	width: 10px;
+	height: 10px;
+	display: inline;
+}
+.arrow img{
+	width: inherit;
+	height: inherit;
+	margin: 1px;
+	padding: 0;
+}
+.arrow:hover {
+	background-color: transparent;
+	border: solid 1px grey;
+}
+.sign {
+	width: 100px;
+	height: 20px;
+	background-color: #000;
+	float: right;
+	font-family: muli, sans-serif;
+	text-align: center;
+}
+.login_tag {
+	position: relative;
+	margin: 5px;
+	background-color: #314996;
+}
+.login_tag a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+.register_tag {
+	position: relative;
+	margin: 5px;
+	background-color: #314996;
+}
+.register_tag a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+.login_tag:hover {
+	border: solid 1px black;
+}
+.register_tag:hover {
+	border: solid 1px black;
+}
+.col-12{
+	height: 700px;
+	background-color: yellow;
+	margin: 0;
+}
+.navigation_bar {
+	width: 100%;
+	height: 80px;
+	background-color: #314996;
+	position: relative;
+}
+.nav_list {
+	width: 100%;
+	height: inherit;
+	position: absolute;
+	text-decoration: none;
+	overflow: hidden;
+	list-style: none;
+	margin: auto;
+	padding: 0;
+	display: flex;
+	flex-wrap: wrap;
+	left: 400px;
+}
+.nav_list li {
+	height: inherit;
+	color: #fff;
+	float: left;
+	padding-top: 28px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	margin-left: 30px;
+	font-family: Roboto Condensed, serif;
+	font-size: 24px;
+
+}
+.nav_list li:hover {
+	background-color: lightblue;
+	color: #000;
+}
 nav{
     margin: 10px, auto;
     background: royalblue
 }
-ul{
+nav ul{
     list-style-type: none;
     overflow: hidden;
     text-align: center;
 }
-a{
+nav a{
     text-decoration: none;
 }
-li{
+nav li{
     padding: 10px;
     display: inline;
     
 }
 #banner{
     display: flex;
-    flex-wrap: nowrap;
-    height: 350px;
+    flex-wrap: wrap;
+    height: auto;
     width: 100%;
     background: grey;
+}
+#banner img{
+    width: 100%;
+    height: 100%;
+}
+.events, .info {
+    display: flex;
+    width: 90%;
+    margin: 30px auto;
+    height: auto;
+    background: #314996;
+    color: white;
+    padding: 10px;
+}
+.events img{
+    width: 5%;
+    height: 5%;
+    display: inline-block;
+    position: absolute;
+    left: 85%
+}
+.events:hover{
+    background:  #5a7ce8
+}
+.info{
+    background: #d6d6d6;
+    border: white solid 3px;
+    margin: auto; 
+    height: 200px;
 }
