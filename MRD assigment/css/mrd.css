@@ -246,6 +246,8 @@ body{
 	margin: 0;
 }
 
+/* Navigation Bar */
+
 .navigation_bar {
 	width: 100%;
 	height: 80px;
@@ -264,7 +266,7 @@ body{
 	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	left: 400px;
+	
 }
 
 .nav_list li {
@@ -304,6 +306,8 @@ body{
 		padding-bottom: 10px;
 	}
 }
+
+/*End of Nav Bar*/
 
 .col-3{
 	height: 300px;

@@ -246,6 +246,9 @@ body{
 	margin: 0;
 }
 
+
+/* Nav Bar*/
+
 .navigation_bar {
 	width: 100%;
 	height: 80px;
@@ -261,10 +264,9 @@ body{
 	overflow: hidden;
 	list-style: none;
 	margin: auto;
-	padding: 0;
 	display: flex;
 	flex-wrap: wrap;
-	left: 400px;
+	left: 300px;
 }
 
 .nav_list li {
@@ -304,6 +306,9 @@ body{
 		padding-bottom: 10px;
 	}
 }
+
+/* End of Nav Bar */
+
 
 .col-3{
 	height: 300px;
