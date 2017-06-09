@@ -21,13 +21,20 @@
                 </div>
             </div>
             <div class="top_right_header">
-                <div class="menuBtn" onclick="openMenu()">
-                    <div class="menu" onclick="dropMenu(this)">
+                <div id="dropdown">
+                    <div class="dropbtn" onclick="change(this) ,openMenu()">
                         <div class="bar1"></div>
                         <div class="bar2"></div>
                         <div class="bar3"></div>
+                        <div onclick="myFunction()" class="dropbtn">
+                        </div>
                     </div>
-                    <div id="menuCont">
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Home</a>
+                        <a href="#">Academics</a>
+                        <a href="#">Contact Us</a>
+                    </div>
+                </div>
                         <div id="nav">
                         <ul class="nav_list">
                             <li><a href="#">Home</a></li>

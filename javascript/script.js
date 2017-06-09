@@ -1,6 +1,8 @@
-function dropMenu(x) {
+function change(x) {
     x.classList.toggle("change");
 }
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
 function openMenu() {
     document.getElementById("myDropdown").classList.toggle("show");
 }
