@@ -246,10 +246,11 @@ body{
 	margin: auto;
 	display: flex;
 	flex-wrap: wrap;
-	left: 300px;
+	
 }
 
 .nav_list li {
+	width: 13.9%;
 	height: inherit;
 	color: #fff;
 	float: left;
@@ -257,7 +258,7 @@ body{
 	padding-left: 15px;
 	padding-right: 15px;
 	text-align: center;
-	margin-left: 30px;
+	margin: 0 20px;
 	font-family: Roboto Condensed, serif;
 	font-size: 24px;
 
