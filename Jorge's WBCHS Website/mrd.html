@@ -4,6 +4,7 @@
 	<title>West Brooklyn Community High School</title>
 	<link rel="stylesheet" type="text/css" href="css/mrd.css">
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <script src=script.js></script>
 </head>
 <body>
 
@@ -36,6 +37,20 @@
 				</div>
 			</div>
 		</div>
+        <div id="dropdown">
+            <div class="dropbtn" onclick="change(this) ,openMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div onclick="myFunction()" class="dropbtn">
+                </div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">Academics</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
 	</div>
 
 
@@ -62,9 +77,15 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-2 info">
+            <div class="accoridon">
+            
+            </div>
+            <div class="accoridon">
+            
+            </div>
+			<div class="col-2 events">
 				<h2>Events</h2>
-				<div class="events_news">
+				<div class="eventsContent">
 					<h3>Graduation!!!</h3>
 					<h3>Student Fair</h3>
 					<h3>Regents</h3>
@@ -83,16 +104,15 @@
 				<img src="images/collage.jpg">
 				<h2>Our Mission</h2>
 			</div>
-			
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row">
 
-		<div class="col-2 info">
+		<div class="col-2 events">
 				<h2>News</h2>
-				<div class="events_news">
+				<div class="eventsContent">
 					<h3>Tickets Available for Graduation</h3>
 					<h3>Get your Cap and Gown</h3>
 				</div>
