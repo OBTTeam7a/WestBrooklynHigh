@@ -87,65 +87,32 @@ body{
 
 .header {
 	position: relative;
-	height: 110px;
+	height: 140px;
 	width: 100%;
 	background-color: #e6e6e6;
 	margin: 0;
 	padding: 0;
 	display: flex;
+	
 }
 
 .logo {
-	width: 100px;
-	height: 100px;
-	background-color: crimson;
-	margin-left: 90px;
-	margin-top: 5px;
+	width: 510px;
+	height: 150px;
+	margin: 0 30px;
 }
 
 .logo img {
 	width: 100%;
 	height: inherit;
-	object-fit: cover;
+	object-fit: contain;
 }
 
-.name{
-	width: 400px;
-	height: 100px;
-	margin-top: 5px;
-	text-align: center;
-}
-
-.school_name {
-	margin-bottom: 0;
-	font-family: Rockwell, serif;
-}
-
-.top_name {
-	margin-top: 0;
-	margin-bottom: 5px;
-	font-size: 42px;
-	font-weight: normal;
-}
-
-.bottom_name {
-	margin-top: 0;
-	font-size: 30px;
-	font-weight: normal;
-}
-
-.border_bottom_line {
-	width: 85%;
-	height: 2px;
-	background-color: black;
-	margin: 0;
-	position: relative;
-	left: 30px;
-}
 
 .top_right_header {
 	width: 61%;
-	height: 100px;
+	height: 150px;
+	margin-top: 5px; 
 }
 
 .lang_select {
@@ -155,7 +122,7 @@ body{
 	position: relative;
 	float: right;
 	margin-top: 0;
-	margin-right: 25px;
+	margin-right: 10px;
 	padding: 0;
 	display: flex;
 }
@@ -199,18 +166,25 @@ body{
 	border: solid 1px grey;
 }
 
-.sign {
-	width: 100px;
-	height: 20px;
-	background-color: #000;
+.right_wrapper{
+	width: 250px;
+	height: 150px;
 	float: right;
+	padding: 0 20px;
+}
+
+.sign {
+	width: 200px;
+	height: 30px;
+	background-color: #000;
 	font-family: muli, sans-serif;
 	text-align: center;
+	padding: 5px 0;
+	
 }
 
 .login_tag {
-	position: relative;
-	margin: 5px;
+	margin: 20px 5px;
 	background-color: #314996;
 }
 
@@ -221,8 +195,7 @@ body{
 }
 
 .register_tag {
-	position: relative;
-	margin: 5px;
+	margin: 20px 5px;
 	background-color: #314996;
 }
 
@@ -243,11 +216,18 @@ body{
 .col-12{
 	height: 700px;
 	background-color: yellow;
-	margin: 0;
+	margin: 5px 0;
 }
 
+.col-12 img{
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+}
 
+/***************************************/
 /* Nav Bar*/
+/***************************************/
 
 .navigation_bar {
 	width: 100%;
@@ -336,12 +316,6 @@ body{
 
 .events_news {
 	display: inline;
-}
-
-.col-12 img{
-	width: 100%;
-	height: inherit;
-	object-fit: cover;
 }
 
 .col-3 img {
