@@ -6,6 +6,9 @@
 	<link rel="stylesheet" type="text/css" href="css/mrd.css">
 	<link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <script src=script.js></script>
+
 </head>
 <body>
 
@@ -37,6 +40,20 @@
 			</div>
 
 		</div>
+        <div id="dropdown">
+            <div class="dropbtn" onclick="change(this) ,openMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div onclick="myFunction()" class="dropbtn">
+                </div>
+            </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">Academics</a>
+                <a href="#">Contact Us</a>
+            </div>
+        </div>
 	</div>
 
 
@@ -63,9 +80,16 @@
 
 	<div class="container">
 		<div class="row">
-			<div class="col-2 info">
+
+            <div class="accoridon">
+            
+            </div>
+            <div class="accoridon">
+            
+            </div>
+			<div class="col-2 events">
 				<h2>Upcoming Events</h2>
-				<div class="events_news">
+				<div class="eventsContent">
 					<h3>Graduation!!!</h3>
 					<h3>Student Fair</h3>
 					<h3>Regents</h3>
@@ -87,16 +111,16 @@
 					<div class="fa"><i>&#xf063;</i></div>
 				<h2>Our Mission</h2>
 			</div>
-			
 		</div>
 	</div>
 
 	<div class="container">
 		<div class="row">
 
-		<div class="col-2 info">
-				<h2>Recent News</h2>
-				<div class="events_news">
+
+		<div class="col-2 events">
+				<h2>News</h2>
+				<div class="eventsContent">
 					<h3>Tickets Available for Graduation</h3>
 					<h3>Get your Cap and Gown</h3>
 				</div>
