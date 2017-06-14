@@ -147,6 +147,9 @@ body{
 	float: right;
 	padding: 0 20px;
 }
+#dropdown{
+	display: none;
+}
 .sign {
 	width: 200px;
 	height: 30px;
@@ -241,6 +244,12 @@ body{
 	background-color: #314996;
 	width: 100%;
 	position: relative;
+}
+.accordion{
+	display: none;
+}
+.panel{
+	display: none;
 }
 .info {
 	margin: 15px;
@@ -357,7 +366,7 @@ p{
 	height: 150px;
 	background-color:;
 	position: absolute;
-	left: 1300px;
+	left: 1150px;
 	margin: 15px 0;
 }
 .good_logo img{
