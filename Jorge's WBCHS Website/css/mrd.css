@@ -228,6 +228,7 @@ body{
 .pic{
 	display: flex;
 	height: 10%;
+	z-index: 0;
 }
 .pic img{
 	height: 100%;
@@ -244,7 +245,6 @@ body{
 .nav_list {
 	width: 100%;
 	height: inherit;
-	position: absolute;
 	text-decoration: none;
 	overflow: hidden;
 	list-style: none;
