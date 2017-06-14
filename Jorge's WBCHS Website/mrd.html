@@ -11,13 +11,15 @@
 <body>
 
 
+    <script src=script.js></script>
+
+</head>
+<body>
 	<div class="header">
 		<div class="logo">
-			<img src="images/WBCHS-logo3.jpg">
+			<img src="images/WBCHSTRANLOGO.png">
 		</div>
-
 		<div class="top_right_header">
-
 			<div class="right_wrapper">
 				<div class="sign login_tag">
 					<a href="#">Login</a>
@@ -38,9 +40,24 @@
 			</div>
 
 		</div>
+        <div id="dropdown">
+            <div class="dropbtn" onclick="change(this) ,openMenu()">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+                <div onclick="myFunction()" class="dropbtn">
+            </div>
+        </div>
+            <div id="myDropdown" class="dropdown-content">
+                <a href="#">Home</a>
+                <a href="#">Academics</a>
+                <a href="#">Contact Us</a>
+                <a href="#">login</a>
+                <a href="#">Register</a>
+                <a href="#">Select Lanuage</a>
+            </div>
+        </div>
 	</div>
-
-
 	<div class="container">
 		<div class="row">
 			<div class="col-12 pic">
@@ -48,31 +65,40 @@
 			</div>
 		</div>
 	</div>
-
 	<div class="navigation_bar">
-
-			<ul class="nav_list">
-				<li>Home</li>
-				<li>Mission</li>
-				<li>Academics</li>
-				<li>Activities</li>
-				<li>Calendar</li>
-				<li>Contact</li>
-			</ul>
-
+		<ul class="nav_list">
+			<li>Home</li>
+			<li>Mission</li>
+			<li>Academics</li>
+			<li>Activities</li>
+			<li>Calendar</li>
+			<li>Contact</li>
+		</ul>
 	</div>
-
 	<div class="container">
 		<div class="row">
-			<div class="col-2 info">
+            <button class="col-2 accordion">
+            <h1>Recent News</h1>
+            <img src="images/droparrowWhite.png"/>
+        	</button>
+        	<div class="col-2 panel">
+            	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        	</div>
+        	<button class="col-2 accordion">
+            	<h1>Upcoming Events</h1>
+            	<img src="images/droparrowWhite.png"/>
+        	</button>
+        	<div class="col-2 panel">
+            	<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+        	</div>
+			<div class="col-2 events">
 				<h2>Upcoming Events</h2>
-				<div class="events_news">
+				<div class="eventsContent">
 					<h3>Graduation!!!</h3>
 					<h3>Student Fair</h3>
 					<h3>Regents</h3>
 				</div>
 			</div>
-
 			<div class="col-3 info">
 				<img src="images/IMG_0096.jpg">
 					<div class="fa"><i>&#xf063;</i></div>
@@ -80,33 +106,29 @@
 			</div>
 			<div class="col-3 info">
 				<img src="images/11227396636_a910cdd7ce_b.jpg">
-					<div class="fa"><i>&#xf063;</i></div>
+				<div class="fa"><i>&#xf063;</i></div>
 				<h2>Student's News</h2>
 			</div>
 			<div class="col-3 info">
 				<img src="images/collage.jpg">
-					<div class="fa"><i>&#xf063;</i></div>
+				<div class="fa"><i>&#xf063;</i></div>
 				<h2>Our Mission</h2>
 			</div>
-			
 		</div>
 	</div>
-
 	<div class="container">
 		<div class="row">
-
-		<div class="col-2 info">
-				<h2>Recent News</h2>
-				<div class="events_news">
+			<div class="col-2 events">
+				<h2>News</h2>
+				<div class="eventsContent">
 					<h3>Tickets Available for Graduation</h3>
 					<h3>Get your Cap and Gown</h3>
 				</div>
 			</div>
-
 			<div class="col-3 info">
 				<img src="images/images.jpg">
 					<div class="fa"><i>&#xf063;</i>
-						
+
 					</div>
 				<h2>Arts</h2>
 			</div>
@@ -117,28 +139,20 @@
 			</div>
 			<div class="col-3 info">
 				<img src="images/WBCHS2.jpg">
-					<div class="fa"><i>&#xf063;</i></div>
+				<div class="fa"><i>&#xf063;</i></div>
 				<h2>Faculty and Staff</h2>
 			</div>
-			
 		</div>
 	</div>
-
 	<div class="footer">
-		<div class="inner_footer">
-			<div class="doe_logo"><img src="images/NYC_DOE_Logo_.png"></div>
-			<div class="bottom-school-name-box">
-				<h1>West Brooklyn</h1>
-				<h2>Community High School</h2>
-				<p>Address: 1053 41st St, Brooklyn, NY 11219</p>
-				<p>Phone: (718) 686-1444</p>
-			</div>
-			<div class="good_logo"><img src="images/GSS_LogoTag_RGB_HighRes.jpg"></div>
+		<div class="doe_logo"><img src="images/NYC_DOE_Logo_.png"></div>
+		<div class="bottom-school-name-box">
+			<h1>West Brooklyn</h1>
+			<h2>Community High School</h2>
+			<p>Address: 1053 41st St, Brooklyn, NY 11219</p>
+			<p>Phone: (718) 686-1444</p>
 		</div>
+		<div class="good_logo"><img src="images/GSS_LogoTag_RGB_HighRes.jpg"></div>
 	</div>
-
-<script>
-</script>
-
 </body>
 </html>
