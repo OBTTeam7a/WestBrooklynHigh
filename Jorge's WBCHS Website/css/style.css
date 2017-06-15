@@ -1,0 +1,460 @@
+* {
+	box-sizing: border-box;
+}
+
+body{
+	background-color: #e6e6e6;
+	margin: 0;
+}
+
+p{
+	margin: 0;
+}
+
+.container {
+	width: 100%;
+	margin-left: auto;
+  	margin-right: auto;
+}
+
+.row {
+	position: relative;
+	width: 100%;
+	margin: auto;
+
+}
+
+.row [class*="col-"] {
+    float: left;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/*****************************/
+/* Desktops and Laptops*/
+/*****************************/
+@media only screen and (min-width: 1024px){
+
+	.col-1 {
+		width: 8.33%;
+	}
+	.col-2 {
+		width: 16.66%;
+	}
+	.col-3 {
+		width: 25%;
+	}
+	.col-4 {
+		width: 33.33%;
+	}
+	.col-5 {
+		width: 41.66%;
+	}
+	.col-6 {
+		width: 50%;
+	}
+	.col-7 {
+		width: 58.33%;
+	}
+	.col-8 {
+		width: 66.66%;
+		}
+	.col-9 {
+		width: 75%;
+	}
+	.col-10 {
+		width: 83.33%;
+	}
+	.col-11 {
+		width: 91.66%;
+	}
+	.col-12 {
+		width: 100%;
+	}
+}
+
+.header {
+	position: relative;
+	max-height: 140px;
+	width: 100%;
+	background-color: #e6e6e6;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	
+}
+
+.logo {
+	width: 40em;
+	height: 8em;
+	margin: 0.5em 30px;
+}
+
+.logo img {
+	width: 100%;
+	height: inherit;
+	object-fit: contain;
+}
+
+
+.top_right_header {
+	width: 61%;
+	height: 150px;
+	margin-top: 5px; 
+}
+
+.lang_select {
+	width: 130px;
+	height: 20px;
+	background-color: white;
+	position: relative;
+	float: right;
+	margin-top: 0;
+	margin-right: 10px;
+	padding: 0;
+	display: flex;
+}
+
+.sub_menu_value{
+	text-align: center;
+	background-color: white;
+	margin-left: 1px;
+	padding: 1px;
+}
+
+.sub_menu_value span{
+	width: inherit;
+	height: inherit;
+	margin: 0;
+	padding: 0;
+}
+
+.sub_menu_value a {
+	text-decoration: none;
+	margin: 0;
+	color: #000;
+}
+
+.arrow {
+	width: 10px;
+	height: 10px;
+	display: inline;
+}
+
+
+.arrow img{
+	width: inherit;
+	height: inherit;
+	margin: 1px;
+	padding: 0;
+}
+
+.arrow:hover {
+	background-color: transparent;
+	border: solid 1px grey;
+}
+
+.right_wrapper{
+	max-width: 250px;
+	max-height: 150px;
+	float: right;
+	padding: 0 20px;
+}
+
+.sign {
+	width: 200px;
+	height: 30px;
+	background-color: #000;
+	font-family: muli, sans-serif;
+	text-align: center;
+	padding: 5px 0;
+	
+}
+
+.login_tag {
+	margin: 20px 5px;
+	background-color: #314996;
+}
+
+.login_tag a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+
+.register_tag {
+	margin: 20px 5px;
+	background-color: #314996;
+}
+
+.register_tag a{
+	text-decoration: none;
+	font-weight: bold;
+	color: #fff;
+}
+
+.login_tag:hover {
+	border: solid 1px black;
+}
+
+.register_tag:hover {
+	border: solid 1px black;
+}
+
+.col-12{
+	height: 63em;
+	margin: 5px 0;
+}
+
+.col-12 img{
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+}
+
+/***************************************/
+/* Nav Bar*/
+/***************************************/
+
+.navigation_bar {
+	width: 100%;
+	height: 80px;
+	background-color: #314996;
+	position: relative;
+}
+
+.nav_list {
+	width: 100%;
+	height: inherit;
+	position: absolute;
+	text-decoration: none;
+	overflow: hidden;
+	list-style: none;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+.nav_list li {
+	width: 13.9%;
+	height: inherit;
+	color: #fff;
+	float: left;
+	padding-top: 28px;
+	padding-left: 15px;
+	padding-right: 15px;
+	text-align: center;
+	margin: 0 20px;
+	font-family: Roboto Condensed, serif;
+	font-size: 24px;
+
+}
+
+.nav_list li:hover {
+	background-color: lightblue;
+	color: #000;
+}
+
+/*****************************/
+/*Body*/
+/*****************************/
+
+.col-2 {
+	height: 20rem;
+	border: 4px solid black;
+	padding: 5px;
+}
+
+.col-2 h2{
+	background-color: #314996;
+	width: 100%;
+	position: relative;
+}
+
+.info {
+	margin: 15px;
+	position: relative;
+	font-family: Muli, serif;
+	font-weight: bold;
+}
+
+.info h2{
+	position: relative;
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	overflow: hidden;
+}
+
+
+.col-3{
+	height: 21em;
+	position: relative;
+	text-align: center;
+}
+
+
+
+.col-3 img {
+	width: 100%;
+	height: inherit;
+	object-fit: cover;
+	display: block;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(105, 105, 105, 0.6);
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.info:hover .overlay {
+  height: 20%;
+}
+
+.overlayText {
+  white-space: nowrap; 
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.events_news {
+	display: inline;
+}
+
+
+.title {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+}
+
+/****************************/
+/* Footer */
+/****************************/
+
+.footer{
+	width: 100%;
+	height: 180px;
+	background-color: #A9A9A9;
+	position: relative;
+
+}
+
+.inner_footer {
+	width: 100%;
+	height: 180px;
+	color: #000;
+	margin: auto;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.doe_logo {
+	width: 200px;
+	height: 160px;
+	background-color: ;
+	position: absolute;
+	margin: 15px 90px;
+	display: inline;
+	left: 100px
+}
+
+.doe_logo img {
+	width: inherit;
+	height: inherit;
+	object-fit: contain;
+}
+
+.bottom-school-name-box{
+	width: 30%;
+	height: 150px;
+	position: absolute;
+	background-color:;
+	margin: 15px 100px;
+	left: 450px;
+	font-family: Rockwell, serif;
+	text-align: center;
+}
+
+.bottom-school-name-box h1{
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 0;
+	padding: 0;
+}
+
+.bottom-school-name-box h2{
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+
+.good_logo {
+	width: 300px;
+	height: 150px;
+	background-color:;
+	position: absolute;
+	left: 1300px;
+	margin: 15px 0;
+}
+
+.good_logo img{
+	width: inherit;
+	height: inherit;
+	object-fit: contain;
+
+}
+
+/*******************/
+/* tablets */
+/*******************/
+@media only screen and (max-width: 768px) {
+	.row [class*="col-"]{
+		width: auto;
+		height: auto;
+	
+	}
+}
+
+/***********************/
+/* smarphones */
+/***********************/
+@media only screen and (max-width: 550px) {
+	.row [class*="col-"]{
+		width: auto;
+		float: none;
+	}
+}
+
+
+@media only screen and (max-width: 550px){
+	.col-2, .col-3 {
+		width: 100%;
+		height: 50%;
+		text-align: center;
+		margin: 0.5em 0;	
+	}
+}
+
+
+
+
