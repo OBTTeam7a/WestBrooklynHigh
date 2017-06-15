@@ -1,9 +1,10 @@
 * {
 	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
 }
 body{
 	background-color: #e6e6e6;
-	margin: 0;
 }
 /*grid code do not touch*/
 .container {
@@ -16,6 +17,7 @@ body{
 	width: 100%;
 	margin: auto;
 	display: flex;
+	flex-wrap: wrap;
 	justify-content: center;
 }
 .row [class*="col-"] {
@@ -38,7 +40,6 @@ body{
 		width: 100%;
 	}
 }
-@media only screen and (min-width: 1024px){
 .col-1 {
 	width: 8.33%;
 }
@@ -250,6 +251,8 @@ body{
 	position: relative;
 	font-family: Muli, serif;
 	font-weight: bold;
+	cursor: pointer;
+	min-width: 300px;
 }
 .news h2, .info h2{
 	position: relative;
@@ -347,19 +350,7 @@ body{
 	object-fit: contain;
 }
 /*mobile site code*/
-@media only screen and (max-width: 720px){
-	.header{
-		display: flex;
-	}
-	.logo {
-		width: 30%;
-		height: 10%;
-		padding: 3%;
-	}
-	.logo img {
-		  width: 100%;
-		  height: 100%;
-	}
+@media only screen and (max-width: 640px) {
 	.bar1, .bar2, .bar3{
 		width: 35px;
 		height: 5px;
@@ -428,18 +419,6 @@ body{
 	.show {
 		display:block;
 	}
-	#banner{
-		display: flex;
-		flex-wrap: wrap;
-		height: auto;
-		width: 100%;
-		background: grey;
-		z-index: -2;
-	}
-	#banner img{
-		width: 100%;
-		height: 100%;
-	}
 	.accordion, .info {
 		display: block;
 		margin: 10px auto;
@@ -447,11 +426,12 @@ body{
 		background: #314996;
 		color: white;
 		padding: 10px;
-		cursor: pointer;
 	}
 	.info{
+		width: 100%;
 		height: 200px;
 		padding: 0;
+
 	}
 	.info img{
 		height: 100%;
@@ -471,8 +451,7 @@ body{
 		width: 5%;
 		height: 5%;
 		display: inline-block;
-		position: absolute;
-		left: 85%;
+		margin-left: 30%;
 	}
 	.accordion:hover, .accordion.active{
 		background:  #5a7ce8
@@ -484,11 +463,49 @@ body{
 		transition: max-height 0.2s ease-out;
 		display: none;
 	}
-	.info{
-		background: #d6d6d6;
-		border: white solid 3px;
+	.footer{
+		width: 100%;
+		height: 5%;
+		background-color: #A9A9A9;
+		position: relative;
+		align-items: center;
+		padding: auto;
+		margin: auto;
+		display: flex;
+		justify-content: center;
+		flex-wrap: wrap;
 	}
-	.news, .right_wrapper, .lang_select, .news{
+	.doe_logo {
+		width: 15%;
+		position: relative;
+		display: inline-block;
+		margin: auto;
+	}
+	.bottom-school-name-box{
+		width: 60%;
+		margin: auto;
+		font-family: Rockwell, serif;
+		text-align: center;
+		display: inline-block;
+	}
+	.bottom-school-name-box h1{
+		font-size: 1.75rem;
+		margin-top: 20px;
+		margin-bottom: 0;
+	}
+	.bottom-school-name-box h2{
+		font-size: 1.50rem;
+		margin-top: 0;
+		margin-bottom: 5px;
+		border-bottom: 2px black solid;
+	}
+	.good_logo {
+		width: 15%;
+		position: relative;
+		display: inline-block;
+		margin: auto;
+	}
+	.news, .right_wrapper, .lang_select, .news, .navigation_bar{
 		display: none;
 	}
 }
