@@ -189,7 +189,6 @@ body{
 .pic{
 	height: 700px;
 	background-color: yellow;
-	margin: 5px 0;
 }
 .pic img{
 	width: 100%;
@@ -201,14 +200,15 @@ body{
 	width: 100%;
 	height: 70px;
 	background-color: #314996;
+	position: static;
+	display: block;
+	justify-content: center;
 }
 .nav_list {
 	width: 100%;
 	height: inherit;
-	position: relative;
 	text-decoration: none;
 	list-style: none;
-	margin: 0;
 	display: flex;
 	justify-content: center;
 }
@@ -216,12 +216,12 @@ body{
 	width: inherit;
 	height: inherit;
 	color: #fff;
-	padding-top: : 30px;
+	padding-top: 17px;
 	text-align: center;
 	font-family: Roboto Condensed, serif;
 	font-size: 1.75rem;
 	position: relative;
-	float: left;
+	left: -20px;
 }
 .nav_list li:hover {
 	background-color: lightblue;
@@ -336,7 +336,7 @@ body{
 	border-bottom: 2px black solid;
 }
 .good_logo {
-	width: 10%;
+	width: 5%;
 	position: relative;
 	display: inline-block;
 	margin: auto;
