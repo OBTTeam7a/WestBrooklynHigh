@@ -1,3 +1,4 @@
+/*dropdown menu*/
 function change(x) {
     x.classList.toggle("change");
 }
@@ -21,18 +22,18 @@ window.onclick = function (event) {
     }
   }
 }
-
+/*accordion code*/
 var acc = document.getElementsByClassName("accordion");
-var i;
-for (i = 0; i < acc.length; i++) {
-    acc[i].onclick = function() {
+var b;
 
+for (b = 0; b < acc.length; b++) {
+  acc[b].onclick = function() {
     this.classList.toggle("active");
     var panel = this.nextElementSibling;
-    if (panel.style.display === "block"){
-      panel.style.display = "none";
+    if (panel.style.maxHeight){
+      panel.style.maxHeight = null;
     } else {
-      panel.style.display = "block";
+      panel.style.maxHeight = panel.scrollHeight + "px";
     }
   }
 }
