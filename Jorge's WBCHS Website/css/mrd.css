@@ -86,8 +86,8 @@ body{
 	display: flex;
 }
 .logo {
-	width: 50%;
-	height: 100%;
+	width: 40%;
+	height: 80%;
 	margin: 0 20px;
 }
 .logo img {
@@ -307,11 +307,10 @@ body{
 	flex-wrap: wrap;
 }
 .doe_logo {
-	width: 20%;
-	height: 20%;
+	width: 10%;
 	position: relative;
 	display: inline-block;
-	justify-content: center;
+	margin: auto;
 }
 .doe_logo img {
 	width: 100%;
@@ -319,13 +318,11 @@ body{
 	object-fit: contain;
 }
 .bottom-school-name-box{
-	width: 30%;
-	height: 80%;
+	width: 20%;
 	margin: auto;
 	font-family: Rockwell, serif;
 	text-align: center;
 	display: inline-block;
-	justify-content: center;
 }
 .bottom-school-name-box h1{
 	font-size: 1.75rem;
@@ -336,20 +333,18 @@ body{
 	font-size: 1.50rem;
 	margin-top: 0;
 	margin-bottom: 5px;
+	border-bottom: 2px black solid;
 }
 .good_logo {
-	width: 40%;
-	height: 20%;
+	width: 10%;
 	position: relative;
 	display: inline-block;
+	margin: auto;
 }
 .good_logo img{
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
-}
-@media only screen and (max-width: 1440px){
-
 }
 /*mobile site code*/
 @media only screen and (max-width: 720px){
