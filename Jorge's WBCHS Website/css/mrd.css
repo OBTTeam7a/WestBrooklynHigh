@@ -17,7 +17,7 @@ body{
 	width: 100%;
 	margin: auto;
 	display: flex;
-	justify-content: center;
+	justify-content: flex-start;
 }
 .row [class*="col-"] {
     float: left;
@@ -187,13 +187,12 @@ body{
 }
 /*banner*/
 .pic{
-	height: 700px;
+	height: 20%;
 	background-color: yellow;
 }
 .pic img{
 	width: 100%;
-	height: inherit;
-	object-fit: cover;
+	height: 100%;
 }
 /* Nav Bar*/
 .navigation_bar {
@@ -245,13 +244,13 @@ body{
 	display: none;
 }
 .info, .news {
-	height: 300px;
+	height: auto;
+	max-height: 300px;
 	margin: 15px 5px;
 	position: relative;
 	font-family: Muli, serif;
 	font-weight: bold;
 	cursor: pointer;
-	min-width: 300px;
 }
 .news h2, .info h2{
 	position: relative;
@@ -261,11 +260,11 @@ body{
 .info{
 	position: relative;
 	text-align: center;
+	object-fit: cover;
 }
 .info img {
 	width: 100%;
 	height: 100%;
-	object-fit: cover;
 	display: block;
 }
 .overlay {
@@ -309,7 +308,7 @@ body{
 	flex-wrap: wrap;
 }
 .doe_logo {
-	width: 10%;
+	width: 15%;
 	position: relative;
 	display: inline-block;
 	margin: auto;
@@ -338,7 +337,7 @@ body{
 	border-bottom: 2px black solid;
 }
 .good_logo {
-	width: 5%;
+	width: 15%;
 	position: relative;
 	display: inline-block;
 	margin: auto;
@@ -431,6 +430,7 @@ body{
 	}
 	.info{
 		width: 100%;
+		max-width: 150px
 		height: 200px;
 		padding: 0;
 
@@ -480,34 +480,36 @@ body{
 		flex-wrap: wrap;
 	}
 	.doe_logo {
-		width: 15%;
+		width: 30%;
 		position: relative;
 		display: inline-block;
 		margin: auto;
 	}
 	.bottom-school-name-box{
-		width: 60%;
+		width: 35%;
 		margin: auto;
 		font-family: Rockwell, serif;
 		text-align: center;
-		display: inline-block;
+		display:inline-block;
 	}
 	.bottom-school-name-box h1{
-		font-size: 1.75rem;
+		font-size: 1.5rem;
 		margin-top: 20px;
-		margin-bottom: 0;
 	}
 	.bottom-school-name-box h2{
-		font-size: 1.50rem;
-		margin-top: 0;
+		font-size: 1rem;
 		margin-bottom: 5px;
 		border-bottom: 2px black solid;
 	}
+	.bottom-school-name-box p{
+		font-size: 0.75rem
+	}
 	.good_logo {
-		width: 15%;
+		width: 30%;
 		position: relative;
-		display: inline-block;
+		display: block;
 		margin: auto;
+		clear: both;
 	}
 	.news, .right_wrapper, .lang_select, .news, .navigation_bar{
 		display: none;
