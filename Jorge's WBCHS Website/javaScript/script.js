@@ -23,17 +23,7 @@ window.onclick = function (event) {
   }
 }
 /*accordion code*/
-var acc = document.getElementsByClassName("accordion");
-var b;
-
-for (b = 0; b < acc.length; b++) {
-  acc[b].onclick = function() {
-    this.classList.toggle("active");
-    var panel = this.nextElementSibling;
-    if (panel.style.maxHeight){
-      panel.style.maxHeight = null;
-    } else {
-      panel.style.maxHeight = panel.scrollHeight + "px";
-    }
-  }
+function openPanel(){
+    var y = document.getElementById("accordion").nextSibling.innerHTML;
+    y.classList.toggle("show");
 }

@@ -378,7 +378,10 @@ body{
 		border: none;
 		cursor: pointer;
 		z-index: 3;
-		padding: 5%;
+		height: 45px;
+		width: 45px;
+		padding: 5px;
+		margin-bottom: 5px;
 	}
 	/* Dropdown button on hover & focus */
 	.dropbtn:hover, .dropbtn:focus {
