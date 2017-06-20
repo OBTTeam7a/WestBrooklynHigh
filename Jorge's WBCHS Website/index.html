@@ -2,14 +2,26 @@
 <html>
 	<head>
 		<title>West Brooklyn Community High School</title>
+		<meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>jQuery UI Accordion - Default functionality</title>
+	    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" type="text/css" href="css/mrd.css">
 		<link href="https://fonts.googleapis.com/css?family=Muli"     rel="stylesheet">
+
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<script src="javaScript/jquery-3.2.1.js"></script>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+		<!-- <script src="javaScript/jquery-3.2.1.js"></script>
 		<script src="javaScript/jquery-ui-1.12.1.custom/jquery-ui.js">
-		</script>
-		<script src="javaScript/script.js"></script>
+		</script> -->
+		<!-- <script src="javaScript/jquery.mobile/jquery.mobile.custom.js"></script> -->
+		<script src="javaScript/dropbtn.js"></script>
+		<script src="javaScript/accordion.js"></script>
 	</head>
 	<body>
 		<div class="header">
@@ -61,7 +73,7 @@
 				</div>
 			</div>
 		</div>
-		<div class="col-12 navigation_bar">
+		<div class="col-10 navigation_bar">
 			<ul class="nav_list">
 				<li>Home</li>
 				<li>Mission</li>
@@ -73,21 +85,29 @@
 		</div>
 		<div class="container">
 			<div class="row">
-				<button class="col-12 accordion">
-					<h1>Recent News</h1>
-					<img src="images/droparrowWhite.png"/>
-				</button>
-				<div class="panel">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<div class="accordion">
+					<h3>
+						Recent news
+						<span class="right">
+							<i class="fa fa-sort-desc" aria-hidden="true"></i>
+						</span>
+					</h3>
+				<div>
+				    <p>
+				    	Mauris mauris ante, blandit et, ultrices a, suscipit eget, quam. Integer ut neque. Vivamus nisi metus, molestie vel, gravida in, condimentum sit amet, nunc. Nam a nibh. Donec suscipit eros. Nam mi. Proin viverra leo ut odio. Curabitur malesuada. Vestibulum a velit eu ante scelerisque vulputate.
+				    </p>
 				</div>
-			</div>
-			<div class="row">
-				<button class="col-12 accordion">
-					<h1>Upcoming Events</h1>
-					<img src="images/droparrowWhite.png"/>
-				</button>
-				<div class="panel">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+				<h3>
+					Upcoming Events
+					<span class="right">
+						<i class="fa fa-sort-desc" aria-hidden="true"></i>
+					</span>
+				  </h3>
+				  <div>
+				    	<p>
+							Sed non urna. Donec et ante. Phasellus eu ligula. Vestibulum sit amet purus. Vivamus hendrerit, dolor at aliquet laoreet, mauris turpis porttitor velit, faucibus interdum tellus libero ac justo. Vivamus non quam. In suscipit faucibus urna.
+				    	</p>
+					</div>
 				</div>
 			</div>
 			<div class="row">

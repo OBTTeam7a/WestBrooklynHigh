@@ -22,8 +22,3 @@ window.onclick = function (event) {
     }
   }
 }
-/*accordion code*/
-function openPanel(){
-    var y = document.getElementById("accordion").nextSibling.innerHTML;
-    y.classList.toggle("show");
-}
