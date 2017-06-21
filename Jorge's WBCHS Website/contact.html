@@ -11,10 +11,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/mrd.css">
         <link href="https://fonts.googleapis.com/css?family=Muli"     rel="stylesheet">
-
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+        <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
         <!-- <script src="javaScript/jquery-3.2.1.js"></script>
         <script src="javaScript/jquery-ui-1.12.1.custom/jquery-ui.js">
         </script> -->
@@ -23,16 +22,74 @@
         <script src="javaScript/accordion.js"></script>
     </head>
     <body>
+        <div class="header">
+            <div class="logo">
+                <img src="images/WBCHSTRANLOGO.png">
+            </div>
+            <div class="top_right_header">
+                <div class="lang_select">
+                    <div class="sub_menu_value">
+                        <span style=" text-align: center;">
+                            <a href="#">
+                                <span>Select Language</span>
+                                <div class="arrow">
+                                    <img src="images/droparrow.png">
+                                </div>
+                            </a>
+                        </span>
+                    </div>
+                </div>
+                <div id="dropdown">
+                    <div class="dropbtn" onclick="change(this) , openMenu()">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="index.html">Home</a>
+                        <a href="academics.html">Academics</a>
+                        <a href="contact.html">Contact Us</a>
+                        <a href="mission.html">Mission</a>
+                        <a href="Calendar.html">Calendar</a>
+                        <a href="about.html">About Us</a>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container">
+            <div class="row">
+                <div class="col-12 navigation_bar">
+                    <ul class="nav_list">
+						<a href="index.html"><li>Home</li></a>
+						<a href="mission.html"><li>Mission</li></a>
+						<a href="academics.html"><li>Academics</li></a>
+						<a href="Calendar.html"><li>Calendar</li></a>
+						<a href="contact.html"><li>Contact</li></a>
+					</ul>
+                </div>
+            </div>
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8 info">
                     <div    class="title">
                         <h2></h2>
                     </div>
-
                 </div>
                 <div class="col-2"></div>
+            </div>
+        </div>
+        <div class="footer">
+            <div class="doe_logo">
+                <img src="images/NYC_DOE_Logo_.png">
+            </div>
+            <div class="bottom-school-name-box">
+                <h1>West Brooklyn</h1>
+                <h2>Community High School</h2>
+                <p>Address: 1053 41st St,<br> Brooklyn, NY 11219</p>
+                <p>Phone: (718) 686-1444</p>
+            </div>
+            <div class="good_logo">
+                <img src="images/GSSTRANS.png">
             </div>
         </div>
     </body>

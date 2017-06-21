@@ -213,20 +213,27 @@ body{
 	display: flex;
 	justify-content: center;
 }
-.nav_list li {
+.nav_list a {
 	width: inherit;
-	height: inherit;
+	height: 100%;
 	color: #fff;
-	padding-top: 17px;
+	text-decoration: none;
 	text-align: center;
 	font-family: Roboto Condensed, serif;
 	font-size: 1.75rem;
 	position: relative;
 	left: -20px;
 }
-.nav_list li:hover {
+.nav_list a :hover {
+	height: 100%;
 	background-color: lightblue;
 	color: #000;
+	top: 10px;
+}
+.nav_list a li{
+	text-decoration: none;
+	text-align: center;
+	padding-top: 17px;
 }
 /*Body*/
 .news {
