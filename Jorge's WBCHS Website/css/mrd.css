@@ -392,6 +392,9 @@ footer{;
 	#space{
 		width: 20%;
 	}
+	.pic{
+		height: 20%;
+	}
 	.bar1, .bar2, .bar3{
 		width: 35px;
 		height: 5px;
@@ -435,7 +438,7 @@ footer{;
 		height:40%;
 		float: right;
 		margin: auto;
-		margin-right: 30px;
+		margin-top: 20px;
 	}
 	/* Dropdown Content (Hidden by Default) */
 	.dropdown-content {
