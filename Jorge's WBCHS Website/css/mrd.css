@@ -262,9 +262,9 @@ h1, h2, li{
 .panel{
 	display: none;
 }
-.info, .news, .info2{
+.info, .news, .info2, .infoMap{
 	height: auto;
-	max-height: 300px;
+	max-height: 250px;
 	margin: 0 10px 50px 10px;
 	position: relative;
 	cursor: pointer;
@@ -287,11 +287,15 @@ h1, h2, li{
 	height: 100%;
 	display: block;
 }
-.info2{
+.info2, .infoMap{
 	padding: 20px;
 	text-align: center;
 	box-shadow: 2.5px 2.5px 10px #857a7e;
 	height: 300px;
+}
+.infoMap{
+	height: 400px;
+	max-height: 2190px;
 }
 .overlay {
   position: absolute;
