@@ -20,42 +20,54 @@
         <!-- <script src="javaScript/jquery.mobile/jquery.mobile.custom.js"></script> -->
         <script src="javaScript/dropbtn.js"></script>
         <script src="javaScript/accordion.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|Oswald" rel="stylesheet">
+
     </head>
     <body>
         <div class="header">
-            <div class="logo">
-                <img src="images/WBCHSTRANLOGO.png">
-            </div>
-            <div class="top_right_header">
-                <div class="lang_select">
-                    <div class="sub_menu_value">
-                        <span style=" text-align: center;">
-                            <a href="#">
-                                <span>Select Language</span>
-                                <div class="arrow">
-                                    <img src="images/droparrow.png">
-                                </div>
-                            </a>
-                        </span>
-                    </div>
-                </div>
-                <div id="dropdown">
-                    <div class="dropbtn" onclick="change(this) , openMenu()">
-                        <div class="bar1"></div>
-                        <div class="bar2"></div>
-                        <div class="bar3"></div>
-                    </div>
-                    <div id="myDropdown" class="dropdown-content">
-                        <a href="index.html">Home</a>
+			<div class="logo">
+				<img src="images/WBCHSTRANLOGO.png">
+			</div>
+			<div id="space"></div>
+			<div class="top_right_header">
+				<div class="lang_select">
+					<div class="sub_menu_value">
+						<span style=" text-align: center;">
+							<a href="#">
+								<span>Select Language</span>
+								<div class="arrow">
+									<img src="images/droparrow.png">
+								</div>
+							</a>
+						</span>
+					</div>
+				</div>
+				<div class="sign login_tag">
+					<a href="#">Login</a>
+				</div>
+				<div class="sign register_tag">
+					<a href="#">Register</a>
+				</div>
+				<div id="dropdown">
+					<div class="dropbtn" onclick="change(this) , openMenu()">
+						<div class="bar1"></div>
+						<div class="bar2"></div>
+						<div class="bar3"></div>
+					</div>
+					<div id="myDropdown" class="dropdown-content">
+						<a href="index.html">Home</a>
 						<a href="academics.html">Academics</a>
 						<a href="contact.html">Contact Us</a>
 						<a href="mission.html">Mission</a>
 						<a href="Calendar.html">Calendar</a>
 						<a href="about.html">About Us</a>
-                    </div>
-                </div>
-            </div>
-        </div>
+						<a href="#">login</a>
+						<a href="#">Register</a>
+						<a href="#">Select Lanuage</a>
+					</div>
+				</div>
+			</div>
+		</div>
         <div class="container">
             <div class="row">
                 <div class="col-12 navigation_bar">
@@ -80,7 +92,7 @@
                     <div class="col-2"></div>
                 </div>
             </div>
-            <div class="footer">
+            <footer>
     			<div class="doe_logo">
     				<a href="http://schools.nyc.gov/schoolportals/15/k529/default.htm">
     					<img src="images/NYC_DOE_Logo_.png">
@@ -97,6 +109,6 @@
     					<img src="images/GSSTRANS.png">
     				</a>
     			</div>
-    		</div>
+    		</footer>
     </body>
 </html>

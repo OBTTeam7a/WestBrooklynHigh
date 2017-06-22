@@ -75,6 +75,14 @@ body{
 .col-12 {
 	width: 100%;
 }
+/*end of grid code touchy touch*/
+/*font code*/
+h1, h2, h3, h4, h5, h6{
+	font-family: 'Cormorant Garamond', serif;
+}
+p{
+	font-family: 'Oswald', sans-serif;
+}
 /*header code*/
 .header {
 	position: relative;
@@ -87,30 +95,31 @@ body{
 	display: flex;
 }
 .logo {
-	width: 30%;
-	height: 70%;
-	margin: 0 20px;
+	width: 25%;
+	height: 65%;
+	margin: 20px;
 }
 .logo img {
 	width: 100%;
 	height: 100%;
 	object-fit: contain;
 }
+#space{
+	width: 60%;
+	height: 20px;
+}
 .top_right_header {
-	width: 61%;
+	width: auto;
 	height: 20%;
-	margin-top: 5px;
+	right: 0;
+	margin-right: 40px;
 }
 .lang_select {
 	width: 130px;
 	height: 20px;
 	background-color: white;
 	position: relative;
-	float: right;
-	margin-top: 0;
-	margin-right: 10px;
-	padding: 0;
-	display: flex;
+	margin:auto;
 }
 .sub_menu_value{
 	text-align: center;
@@ -143,12 +152,6 @@ body{
 .arrow:hover {
 	background-color: transparent;
 	border: solid 1px grey;
-}
-.right_wrapper{
-	width: 250px;
-	height: 150px;
-	float: right;
-	padding: 0 20px;
 }
 #dropdown{
 	display: none;
@@ -188,13 +191,14 @@ body{
 }
 /*banner*/
 .pic{
-	height: 10%;
-	background-color: yellow;
+	height: 500px;
+	background: url(images/download.jpg);
+	background-position: bottom;
 }
 .pic img{
 	width: 100%;
 	height: 100%;
-	object-fit: fill;
+	object-fit: cover;
 }
 /* Nav Bar*/
 .navigation_bar {
@@ -204,6 +208,7 @@ body{
 	position: static;
 	display: block;
 	justify-content: center;
+	margin-bottom: 50px;
 }
 .nav_list {
 	width: 100%;
@@ -259,14 +264,14 @@ body{
 .info, .news {
 	height: auto;
 	max-height: 300px;
-	margin: 15px 5px;
+	margin: 0 10px 50px 10px;
 	position: relative;
-	font-family: Muli, serif;
-	font-weight: bold;
 	cursor: pointer;
+	background: white;
 }
-.news h2, .info h2{
+.news h2{
 	position: relative;
+	text-align: center;
 	color: #fff;
 	overflow: hidden;
 }
@@ -312,12 +317,12 @@ body{
 }
 .events_news {
 	display: block;
+	text-align: center;
 }
-.footer{
+footer{;
 	width: 100%;
 	height: 5%;
 	background-color: #A9A9A9;
-	position: relative;
 	align-items: center;
 	padding: auto;
 	margin: auto;
@@ -326,10 +331,11 @@ body{
 	flex-wrap: wrap;
 }
 .doe_logo {
-	width: 15%;
+	width: 12%;
 	position: relative;
 	display: inline-block;
 	margin: auto;
+	padding: 15px;
 }
 .doe_logo img {
 	width: 100%;
@@ -359,6 +365,7 @@ body{
 	position: relative;
 	display: inline-block;
 	margin: auto;
+	padding: 15px;
 }
 .good_logo img{
 	width: 100%;
@@ -533,7 +540,7 @@ body{
 		margin: auto;
 		clear: both;
 	}
-	.news, .right_wrapper, .lang_select, .news, .navigation_bar{
+	.news, .login_tag, .register_tag, .lang_select, .news, .navigation_bar{
 		display: none;
 	}
 }
