@@ -77,10 +77,10 @@ body{
 }
 /*end of grid code touchy touch*/
 /*font code*/
-h1, h2, h3, h4, h5, h6{
+p, h3, h4, h5, h6{
 	font-family: 'Cormorant Garamond', serif;
 }
-p{
+h1, h2, li{
 	font-family: 'Oswald', sans-serif;
 }
 /*header code*/
@@ -120,6 +120,7 @@ p{
 	background-color: white;
 	position: relative;
 	margin:auto;
+	margin-top: 10px;
 }
 .sub_menu_value{
 	text-align: center;
@@ -166,7 +167,7 @@ p{
 
 }
 .login_tag {
-	margin: 20px 5px;
+	margin: 15px 5px 0 5px;
 	background-color: #314996;
 }
 .login_tag a{
@@ -175,7 +176,7 @@ p{
 	color: #fff;
 }
 .register_tag {
-	margin: 20px 5px;
+	margin: 15px 5px;
 	background-color: #314996;
 }
 .register_tag a{
