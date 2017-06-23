@@ -97,7 +97,7 @@ h1, h2, li{
 .logo {
 	width: 25%;
 	height: 65%;
-	margin: 20px;
+	margin: 30px 20px 0 20px;
 }
 .logo img {
 	width: 100%;
@@ -254,6 +254,13 @@ h1, h2, li{
 	width: 100%;
 	position: relative;
 }
+.num{
+
+}
+.month{
+	padding: 0 15px;
+	background: #314996;
+}
 .accordion{
 	display: none;
 }
@@ -361,6 +368,7 @@ footer{;
 	font-family: Rockwell, serif;
 	text-align: center;
 	display: inline-block;
+	margin-bottom: 20px;
 }
 .bottom-school-name-box h1{
 	font-size: 1.75rem;
@@ -392,6 +400,7 @@ footer{;
 	}
 	.logo{
 		width: 60%;
+		margin:20px;
 	}
 	#space{
 		width: 20%;
