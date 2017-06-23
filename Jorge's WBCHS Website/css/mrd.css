@@ -77,7 +77,7 @@ body{
 }
 /*end of grid code touchy touch*/
 /*font code*/
-p, h3, h4, h5, h6{
+p, h3, h4, h5, h6, div{
 	font-family: 'Cormorant Garamond', serif;
 }
 h1, h2, li{
@@ -227,7 +227,7 @@ h1, h2, li{
 	text-decoration: none;
 	text-align: center;
 	font-family: Roboto Condensed, serif;
-	font-size: 1.75rem;
+	font-size: 1.50rem;
 	position: relative;
 	left: -20px;
 	padding: auto;
@@ -241,7 +241,7 @@ h1, h2, li{
 .nav_list a li{
 	text-decoration: none;
 	text-align: center;
-	padding-top: 1%;
+	padding-top: 1.5%;
 }
 /*Body*/
 .news {
@@ -260,6 +260,12 @@ h1, h2, li{
 .month{
 	padding: 0 15px;
 	background: #314996;
+}
+.eventTitle{
+
+}
+.eventDes{
+
 }
 .accordion{
 	display: none;
@@ -321,13 +327,16 @@ h1, h2, li{
 .overlayText {
   white-space: nowrap;
   color: white;
-  font-size: 1rem;
+  font-size: 1.25rem;
   position: absolute;
   overflow: hidden;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  font-weight: bolder;
+  letter-spacing: 1.03125px;
 }
 .title{
 	text-align: center;
