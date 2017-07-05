@@ -11,5 +11,7 @@
     ));
 	// featured Image
 	add_theme_support('post-tumbnails');
+	add_image_size('small-thumbnail', 180,120, true);
+	add_image_size('banner-image'920,210, array('center', 'center'));
 }
 add_action('after_setup_theme', 'bannerPic')
